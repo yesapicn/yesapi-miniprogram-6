@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/API/Common_Date/Common_Date"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Hello uniapp",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "page-head": "/components/page-head",
+    "page-foot": "/components/page-foot"
+  }
+}

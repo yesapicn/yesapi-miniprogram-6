@@ -1,0 +1,29 @@
+<view bind:__l="__l">
+  <page-head title="{{title}}"></page-head>
+  <form data-event-opts="{{[['submit',[['getDaysFromNowOkay']]]]}}" bindsubmit="__e">
+    <view class="uni-title uni-common-pl">日期选择</view>
+    <view class="uni-list">
+      <view class="uni-list-cell">
+        <view class="uni-list-cell-left">当前选择</view>
+        <view class="uni-list-cell-db">
+          <picker mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" data-event-opts="{{[['change',[['bindDateChange',['$event']]]]]}}" bindchange="__e">
+            <view class="uni-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="uni-list">
+      <view class="uni-list-cell">
+        <view class="uni-list-cell-left">距离今天已经</view>
+        <view class="uni-list-cell-db">
+          <input class="uni-input" type="text" placeholder=" " name="title" disabled data-event-opts="{{[['input',[['__set_model',['first','$event',[]]]]]]}}" value="{{first}}" bindinput="__e" />
+        </view>
+      </view>
+    </view>
+    <view class="uni-padding-wrap">
+      <view class="uni-btn-v">
+        <button type="primary" formType="submit">转换</button>
+      </view>
+    </view>
+  </form>
+</view>
